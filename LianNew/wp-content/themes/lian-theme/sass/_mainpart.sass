@@ -1,0 +1,94 @@
+img.mainpart
+ width: 100%
+
+.mainpart
+ text-align: center
+.sim-slider 
+  opacity: 1
+  width: 100%
+  margin: 0
+  padding: 0
+  border: none
+  background-color: white
+  position: relative
+  font-size: 0px
+.sim-slider-list 
+  margin: 0
+  padding: 0
+  list-style-type: none
+  position: relative
+.sim-slider-element 
+  font-size: 0px
+  width: 100%
+  transition: opacity 1s ease-in
+  position: absolute
+  z-index: 2
+  left: 0
+  top: 0
+  display: block
+/* Navigation item styles */
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right 
+  width: 43px
+  height: 43px
+  position: absolute
+  cursor: pointer
+  opacity: 0.6
+  z-index: 4
+div.sim-slider-arrow-left 
+  left: 110px
+  top: 45%
+  display: block
+  background: url("../img/slider/prev.png") no-repeat
+div.sim-slider-arrow-right 
+  right: 110px
+  top: 45%
+  display: block
+  background: url("../img/slider/next.png") no-repeat
+div.sim-slider-arrow-left:hover 
+  background: url("../img/slider/prev-hover.png") no-repeat
+div.sim-slider-arrow-right:hover 
+  background: url("../img/slider/next-hover.png") no-repeat
+div.sim-slider-dots 
+  width: 100%
+  height: auto
+  position: absolute
+  padding-bottom: 56px
+  left: 0
+  bottom: 0
+  z-index: 3
+  text-align: center
+span.sim-dot 
+  width: 15px
+  height: 15px
+  margin: 5px 16px
+  padding: 0
+  display: inline-block
+  background-color: #ffffff
+  border-radius: 7px
+  cursor: pointer
+
+@media (max-width: 575px)
+ div.sim-slider-arrow-left 
+  left: 10px
+ div.sim-slider-arrow-right 
+  right: 10px
+ div.sim-slider-dots
+  padding-bottom: 10px
+ span.sim-dot 
+   width: 10px
+   height: 10px
+   background-color: #ffffff
+   border-radius: 6px
+@media (min-width: 576px) and (max-width: 767px)
+  div.sim-slider-arrow-left 
+   left: 10px
+  div.sim-slider-arrow-right 
+   right: 10px
+  div.sim-slider-dots
+   padding-bottom: 10px
+ 
+
+
+   
+ 

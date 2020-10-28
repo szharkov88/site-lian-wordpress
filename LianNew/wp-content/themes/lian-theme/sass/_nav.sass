@@ -1,0 +1,66 @@
+.nav
+ padding-top: 27px
+ padding-bottom: 28px
+ background-color: #ffffff
+ box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15)
+ &-logo_img:hover
+  cursor: pointer
+ &-menu-ul
+  display: flex
+  justify-content: space-between
+  list-style: none
+  &_li
+   display: inline-block
+   color: #777777
+   font-size: 14px
+   font-weight: 700
+   text-transform: uppercase
+   &:hover
+    color: #444444
+    cursor: pointer
+    &:before
+     opacity: 1
+     content: " "
+     background: #444444
+     width: 20px
+     height: 1px
+     float: left
+     margin-top: 7px
+     margin-right: 5px
+
+   
+
+   &_zoom 
+    background: url(../img/home/zoom.png) no-repeat
+    display: block
+    width: 19px
+    height: 17px
+    margin-left: 20px
+    &:hover
+     background: url(../img/home/zoom-black.png) no-repeat
+    &:before
+     display: none
+ &-link
+  text-decoration: none
+  color: #777777
+  &:hover
+   color: #444444
+   cursor: pointer
+
+@media (max-width: 575px)
+ .nav-logo
+  text-align: center
+  margin-bottom: 30px
+ .nav-menu-ul_li:hover:before
+  content: none
+@media (min-width: 576px) and (max-width: 767px)
+ .nav-logo
+  text-align: center
+  margin-bottom: 30px
+ .nav-menu-ul_li:hover:before
+  content: none
+@media (min-width: 768px) and (max-width: 991px)
+ .nav-menu-ul_li:hover:before
+   content: none
+
+ 

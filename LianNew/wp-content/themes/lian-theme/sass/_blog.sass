@@ -1,0 +1,327 @@
+.blog
+ padding-top: 71px
+ padding-bottom: 101px
+ background-color: #fafafa
+
+ &-main
+  width: 358px
+  margin-bottom: 33px
+  display: inline-block
+ &-block
+  padding-top: 39px
+  padding-bottom: 40px
+  padding-right: 37px
+  padding-left: 45px
+  width: 358px
+  background-color: #ffffff
+  display: inline-block
+  &_type
+   width: 110px
+   height: 26px
+   background-color: #000000
+   color: #ffffff
+   font-family: "Roboto"
+   font-size: 13px
+   font-weight: 500
+   text-transform: uppercase
+   padding: 8px 0px
+   border-radius: 2px
+   text-align: center
+   margin-bottom: 29px
+  &_h1
+   color: #333333
+   font-family: "Roboto"
+   font-size: 20px
+   line-height: 30px
+   font-weight: 700
+   margin-bottom: 15px
+   &:hover
+    cursor: pointer
+  &-autorwithicon
+   display: flex
+   align-items: center
+   margin-bottom: 28px
+  &-icon1
+   display: inline-block
+  &_author
+   display: inline-block
+   color: #cccccc
+   font-family: "Roboto"
+   font-size: 13px
+   font-weight: 700
+  &_text
+   color: #777777
+   font-family: "Roboto"
+   font-size: 18px
+   font-weight: 400
+   line-height: 24px
+   margin-bottom: 45px
+
+  &_footer
+   display: flex
+   align-items: center
+   &_icon2
+    height: 15px
+    display: inline-block
+    margin-right: 5px
+   &_data
+    display: inline-block
+    color: #9a9a9a
+    font-family: Roboto
+    font-size: 13px
+    font-weight: 400
+    margin-right: 115px
+   &_icons
+
+    &_n1
+     display: inline-block
+     height: 14px
+     margin-right: 18px
+     &:hover
+      cursor: pointer
+    &_n2
+     display: inline-block
+     height: 14px
+     &:hover
+      cursor: pointer
+
+
+
+ &-block2
+ &-form
+  margin-bottom: 27px
+ &-search
+  width: 363px
+  height: 60px
+  background-color: #ffffff
+  border: none
+  
+input[type="search"]
+ border: none /* Убираем рамку */
+ outline: none /* Убираем свечение в Chrome и Safari */
+ -webkit-appearance: none /* Убираем рамку в Chrome и Safari */
+ width: 310px 
+ height: 60px/* Ширина поля */
+ vertical-align: middle /* Выравнивание по середине */
+ color: #000000
+ font-family: Roboto
+ font-size: 16px
+ font-style: oblique
+ &::placeholder 
+  color: #b7b7b7
+button[type="submit"] 
+ width: 35px/* Ширина кнопки */
+ height: 34px /* Высота кнопки */
+ border: none /* Убираем рамку */
+ background-color: #999999
+ vertical-align: middle /* Выравнивание по середине */
+ border-radius: 2px
+ &:hover
+  cursor: pointer
+.sidebar-block1
+ width: 361px
+ margin-bottom: 25px
+ &-posts
+  width: 361px
+  height: 40px
+  background-color: #ebebeb
+  color: #000000
+  font-family: Roboto
+  font-size: 18px
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 7.2px
+  text-align: center
+  padding-top: 14px
+ &-list
+  padding-top: 26px
+  padding-bottom: 29px
+  padding-right: 28px
+  padding-left: 25px
+  background-color: #ffffff
+  &-news
+   margin-bottom: 23px
+   &_last
+    margin-bottom: 0
+   &_img
+     display: inline-block
+     &:hover
+      cursor: pointer
+   &-block
+    float: right
+    display: inline-block
+    width: 201px
+
+
+    &_h1
+     display: inline block
+     margin-bottom: 11px
+     color: #3d3d3d
+     font-family: Roboto
+     font-size: 16px
+     font-weight: 500
+     line-height: 20px
+     &:hover
+      cursor: pointer
+
+    &_p 
+     display: inline-block
+     font-family: "Roboto"
+     font-size: 14px
+     font-weight: 300
+     color: #777777
+     font-size: 13px
+ &-tags
+  padding-top: 35px
+  padding-left: 20px
+  padding-bottom: 25px
+  background-color: #ffffff
+  &_block
+   display: inline-block
+   padding: 9px 18px 11px 16px
+   margin-right: 5px
+   margin-bottom: 10px
+   border: 1px solid #eeeeee
+   border-radius: 2px
+   color: #9c9c9c
+   font-family: Roboto
+   font-size: 13px
+   font-weight: 400
+   &:hover
+    background-color: #000000
+    border: 1px solid #000000
+    cursor: pointer
+ &-inst
+  background-color: #ffffff
+  padding: 36px 24px 23px 27px
+  &_item
+   &:hover
+    cursor: pointer
+
+.blog-main-num3
+ position: relative
+ height: 404px
+
+ 
+.blog-block-num3
+ position: absolute
+ top: 0
+ left: 0
+ background-color: #ffffff
+ opacity: 1
+ &:hover
+  background-color: #000000
+  opacity: 0.85
+  color: #ffffff
+ &:hover .blog-block_type
+  color: #000000
+  background-color: #ffffff
+ &:hover .blog-block_h1
+  color: #ffffff
+ &:hover .blog-block_autorwithicon
+  color: #cccccc
+ &:hover .blog-block_text
+  color: #d6d6d6
+ &:hover .blog-block_footer_data
+  color: #a1a1a1
+ &:hover .hover-img1
+  filter: invert(100%)
+ &:hover .hover-img2
+  filter: invert(100%)
+ &:hover .hover-img3
+  filter: invert(100%)
+ &:hover .hover-img4
+  filter: invert(100%)
+
+@media (max-width: 575px)
+ .blog
+  text-align: center
+  padding-top: 30px
+  padding-bottom: 0px
+  &-main
+   text-align: left
+  &-form
+   display: inline-block
+ .sidebar-block1
+  display: inline-block
+  text-align: left
+ .blog-block,
+ .blog-main
+  width: 330px
+ .sidebar-block1
+  display: inline-block
+  text-align: left
+  width: 330px
+  &-posts
+   width: 330px
+ .blog-form
+  display: inline-block
+  margin-top: 20px
+  width: 330px
+  text-align: center
+ .blog-search
+  width: 330px
+ .sidebar-block1-inst_item
+  width: 90px
+  height: 90px
+ .blog-block_footer_data
+  margin-right: 76px
+ .sidebar-block1-list-news
+  width: 300px
+ input[type="search"]
+  width: 260px 
+@media (min-width: 576px) and (max-width: 767px)
+ .blog
+  text-align: center
+  padding-top: 30px
+  padding-bottom: 0px
+  &-main
+   text-align: left
+  &-form
+   display: inline-block
+ .sidebar-block1
+  display: inline-block
+  text-align: left
+@media (min-width: 768px) and (max-width: 991px)
+ .blog-block,
+ .blog-main
+  width: 100%
+  text-align: left
+ .blog
+  text-align: center
+  padding-top: 30px
+  padding-bottom: 0px
+  &-block_footer_data
+   margin-right: 40px
+ .sidebar-block1
+  display: inline-block
+  text-align: left
+ .blog-form
+  display: inline-block
+  margin-top: 20px
+ .blog-button 
+  margin-top: 0
+@media (min-width: 992px) and (max-width: 1199px)
+ .blog
+  text-align: center
+  padding-top: 30px
+  padding-bottom: 0px
+  &-block_footer_data
+   margin-right: 40px
+ .sidebar-block1
+  display: inline-block
+  text-align: left
+  margin-left: 300px
+ .blog-form
+  display: inline-block
+  margin-top: 20px
+  margin-left: 300px
+ .blog-button 
+  margin-top: 0
+ .blog-block,
+ .blog-main
+  width: 350px
+  text-align: left
+  
+
+

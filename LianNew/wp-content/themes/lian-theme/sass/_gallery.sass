@@ -1,0 +1,169 @@
+.header
+ 
+ padding-top: 33px
+ background-color: #fafafa
+ &-menu
+  border-top: 1px solid #e1e1e1
+  border-bottom: 1px solid #e1e1e1
+
+ 
+  padding-top: 5px
+  padding-bottom: 5px
+  &-ul
+   color: #777777
+   font-size: 14px
+   font-weight: 700
+   text-transform: uppercase
+   list-style: none
+   display: flex
+   align-items: center
+   justify-content: center
+
+   
+   
+   &_li
+    display: inline-block
+    
+    margin: 0 12px
+
+   
+    &:hover
+     cursor: pointer
+     color: #000000
+    &:after 
+     content: '/'
+     color: #e1e1e1
+     font-size: 33px
+     font-weight: 100
+     margin-left: 40px
+    &_last
+     &:after 
+      content: ''
+      color: #e1e1e1
+      font-size: 33px
+      font-weight: 100
+      margin-left: 40px
+      
+.column
+ margin-top: 34px
+ display: block
+ position: relative
+ font-size: 0px
+ &:hover
+  cursor: pointer
+.column:after
+ content: ''
+ position: absolute
+ top: 0
+ left: 0
+ right: 0
+ bottom: 0
+ background: rgba(0,0,0,.3)
+ opacity: 0
+.column:before 
+ content: ''
+ position: absolute
+ top: 0
+ left: 0
+ right: 0
+ bottom: 0
+ background: url(../img/gallery/plus.png) no-repeat center
+ opacity: 0
+.column:hover:before
+ opacity: 1
+ 
+.column:hover:after
+ opacity: 1
+
+.header-button
+ 
+ width: 125px
+ height: 30px
+ background-color: #959595
+ padding: 10px 24px 10px 24px
+ border: none
+ border-radius: 2px
+ color: #ffffff
+ font-family: Roboto
+ font-size: 13px
+ font-weight: 700
+ margin-top: 36px
+ margin-bottom: 73px
+ 
+ text-transform: uppercase
+ &:hover
+  cursor: pointer
+  opacity: 0.7
+.mdcollums
+ display: none
+
+@media (max-width: 575px)
+ .header-menu
+  padding-top: 10px
+  padding-bottom: 10px
+  &-ul 
+   &_li
+    margin: 0 6px
+    line-height: 10px
+    font-size: 10px
+    &:after
+     margin-left: 10px
+     content: none
+ .column
+  width: 300px
+  margin: 0 auto
+  margin-top: 25px
+@media (min-width: 576px) and (max-width: 767px)
+ .header-menu
+  padding-top: 10px
+  padding-bottom: 10px
+  &-ul 
+   &_li
+    margin: 0 15px
+    line-height: 10px
+    font-size: 10px
+    &:after
+     margin-left: 10px
+     content: none
+ .column
+  width: 300px
+  margin: 0 auto
+  margin-top: 25px
+@media (min-width: 768px) and (max-width: 991px)
+ .header-menu
+  padding-top: 10px
+  padding-bottom: 10px
+  &-ul 
+   &_li
+    margin: 0 10px
+    line-height: 10px
+    font-size: 13px
+    &:after
+     margin-left: 10px
+     content: none
+ .mdcollums
+  display: block
+ .allcollums
+  display: none
+ .column
+  width: 300px
+  margin-top: 20px
+ .header-button
+  margin-top: 70px
+@media (min-width: 992px) and (max-width: 1199px)
+ .header-menu
+  &-ul 
+   padding-top: 10px
+   padding-bottom: 5px
+   &_li
+    margin: 0 10px
+    line-height: 10px
+    font-size: 13px
+
+
+
+
+     
+ 
+
+
